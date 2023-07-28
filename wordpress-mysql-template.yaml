@@ -130,11 +130,11 @@ objects:
           from:
             kind: ImageStreamTag
             namespace: openshift
-            name: php
+            name: php:7.4-ubi8
       output:
         to:
           kind: ImageStreamTag
-          name: ${APPLICATION_NAME}:7.4-ubi8
+          name: wordpress:latest
       triggers:
         - type: ImageChange
         - type: ConfigChange
